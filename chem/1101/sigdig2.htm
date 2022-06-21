@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>significant digits (counting significant digits)</title>
+</head>
+
+<body bgcolor="white">
+
+<h1>Counting Significant Digits</h1>
+
+Counting significant digits is as simple as 1-2-3.  Just follow the
+rules!<p><p>
+
+<table width="50%" align="center">
+  <tr>
+    <td bgcolor="ffccff"><b>Rule 1</b>:</td>
+    <td bgcolor="99ccff">All non-zero digits and "trapped zeros" 
+        (zeros which occur between significant digits) are significant 
+        digits.</td>
+  </tr>
+  <tr>
+    <td bgcolor="ffccff"><b>Rule 2</b>:</td>
+    <td bgcolor="99ccff">Leading zeros are never significant digits.
+        All they do is hold the decimal place.</td>
+  </tr>
+  <tr>
+    <td bgcolor="ffccff"><b>Rule 3</b>:</td>
+    <td bgcolor="99ccff">Trailing zeros to the right of the decimal
+        are always significant digits.  If they weren't no one would
+        include them!</td>
+  </tr>
+  <tr>
+    <td bgcolor="ffccff"><b>Rule 4</b>:</td>
+    <td bgcolor="99ccff">Trailing zeros to the left of the decimal 
+        place may or may not be significant.  It is ambiguous in 
+        these cases.  To help remove the ambiguity, people often use
+        scientific notation.  Then if the zeros are significant
+        digits, it is clear because the occur as trailing zeros to the
+        <b>right</b> of the decimal place.</td>
+  </tr>
+  <tr>
+    <td bgcolor="ffccff"><b>Rule 5</b>:</td>
+    <td bgcolor="99ccff">Conversion factors which are based on
+        definitions (such as 1000 mL per L or 3600 seconds per hour)
+        have an infinite number of significant digits (because they 
+        are exact.)  Exact numbers also occur in things you can count
+        with zero uncertainty (such as 12 eggs or 37 railroad cars.)</td>
+  </tr>
+  <tr>
+    <td bgcolor="ffccff"><b>Rule 6</b>:</td>
+    <td bgcolor="99ccff">Some physical constants are so well determined 
+        that the number of significant digits can be chosen.  An 
+        example of this is pi which can be used to 3 significant
+        digits (3.14) or 8 (3.1415927) when really high prescision 
+        is required.</td>
+  </tr>
+</table><p><p>
+
+Here are some examples.<p>
+
+<table width="65%" align="center">
+  <tr>
+    <td bgcolor="ccff99">12.34 g</td>
+    <td bgcolor="99ccff">4 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">0.000234 L</td>
+    <td bgcolor="99ccff">3 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1, 2</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">102.0 m</td>
+    <td bgcolor="99ccff">4 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1, 3</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">1200 km/sec</td>
+    <td bgcolor="99ccff">2, 3 or 4 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1, 4</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">6.02 x 10<sup>23</sup> atoms</td>
+    <td bgcolor="99ccff">3 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">1.400 x 10<sup>-3</sup> mol</td>
+    <td bgcolor="99ccff">4 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1, 3</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">0.002320 coulomb</td>
+    <td bgcolor="99ccff">4 significant digits</td>
+    <td bgcolor="ff99cc">Rule 1, 2 and 3</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">5280 ft/mile</td>
+    <td bgcolor="99ccff">infinite number of significant digits</td>
+    <td bgcolor="ff99cc">Rule 5</td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99">c (speed of light in a vaccum)</td>
+    <td bgcolor="99ccff">generally, as many as you need</td>
+    <td bgcolor="ff99cc">Rule 6</td>
+  </tr>
+</table>
+<hr>
+
+<h3>Sample Problems</h3>
+
+How many significant digits are in the following?
+<a name="1">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ffccff">26.450 mL
+      <input type="hidden" name="question" value="How many significant digits in: 26.450 mL ?">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="3">3</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="4">4</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="5">5</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="infinite">infinte</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="4 or 5">4 or 5</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="5">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig2.htm#1">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="2">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ffccff">450 K
+      <input type="hidden" name="question" value="How many significant digits in: 450 K ?">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="2">2</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="3">3</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="4">4</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="infinite">infinte</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="2 or 3">2 or 3</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="2 or 3">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig2.htm#2">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="3">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ffccff">1000000 mg/kg
+      <input type="hidden" name="question" value="How many significant digits in: 1000000 mg/kg ?">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="3">3</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="4">4</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="5">5</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="infinite">infinte</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="1, 2, 3, 4, 5, 6 or 7">1, 2, 3, 4, 5, 6 or 7</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="infinite">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig2.htm#3">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="4">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ffccff">0.0230 g
+      <input type="hidden" name="question" value="How many significant digits in: 0.0230 g ?">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="3">3</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="4">4</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="5">5</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="infinite">infinte</td>
+    <td bgcolor="ccffcc"><input type="radio" name="answer" value="2 or 3">2 or 3</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="3">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig2.htm#4">
+<input type="submit" value="Am I right?">
+</form>
+
+
+<hr>
+Return to the <a href="/~pfleming/chem/1101/">Chem 1101 Page</a>?<p>
+
+</body>
+</html>

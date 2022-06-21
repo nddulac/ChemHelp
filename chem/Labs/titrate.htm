@@ -1,0 +1,371 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Virtual Titration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h1>Virtual Titration</h1>
+<img src="/~pfleming/chem/titrate/sn1setup.gif" align="right">
+<div name="instructions">
+In this simulation, you will have the chance to review the procedure for stanardizing a solution of NaOH (precisely determining its concentration) by titration with potassium hydrogen phthalate (KHP).<p>
+For an actual standardization of NaOH solution with KHP as the promary standard, you will require the following equipment and materials:<p>
+
+<div name="chemicals">
+  <img src="/~pfleming/chem/titrate/chemicals.jpg" align="right" height="300" width="500">
+</div>
+
+Chemicals:<br>
+<ol>
+  <li>Sodium hydroxide (solid)
+  <li>Potassium hydrogen phthalate (solid)
+  <li>deionized water (liquid, oddly enough)
+  <li>phenolphthalein indicator solution
+</ol>
+Glassware:<br>
+<ol>
+  <li>buret (50 mL)
+  <li>Elenmeyer flask (125 or 250 mL)
+  <li>magnetic stirer (optional)
+  <li>droppers and stirring rods (as needed)
+</ol>
+</div>
+
+<div name="intro">
+<h3>First, a little review.</h3>
+The process of <u>standardization</u> is the process of determining the precise value of a measured quantity by comparison to a <u>primary standard</u>. In this case, we wish
+to determine the concentration of a sodium hydroxide (NaOH) solution so that we can use the solution in titratations where precision is required. After the standardization,
+The NaOH solution will be a <u>secondary standard</u>. We will use potassium hydrogen phthalate (KHP) as a <u>primary standard</u>. KHP is well-suited for this purprose for
+a very important reasons: KHP is not very hygroscopic, so it doesn't absorb water from the atmosphere. As such, the mass of KHP measured on a balance can be used to determine 
+exactly how many moles of KHP are bing used.<p>
+</div>
+
+<div name="procedure">
+<h3>Procedure</h3>
+<ol>
+  <li>Obtain enough NaOH to make approximately 500 mL of 0.2 M NaOH solution. The mass need only be approximate.
+  <li>Dissolve the NaOH in enough deionized water to make roughly 500 mL of solution. The volume need only be approximate.
+  <li>Obtain enough KHP so that you will use roughly 20 mL of your NaOH solution (which shoudl have a concentration of 
+      approximately 0.2 M.) The mass should be known as precisely as possible (typically to +/- 0.0001 g)
+  <li>Dissolve the KHP in a small voume of deionized water and add about three drops of phenolphthalein.
+  <li>Titrate the KHP to the endpoint. Do this carefully as you approach the endpoint so as to get an 
+      accurate determination of the actual endpoint!
+  <li>Repeat the titration two or three more times to get a precise dtermination of the concentration of the NaOH solution concentration.
+</ol>
+</div>
+
+<div name="Questions">
+<hr><a name="WhyKHP">
+<form action="/~pfleming/cgi-bin/question.pl method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#WhyKHP">
+<table align="center" width="80%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      Why do we use KHP as a primary standard instead of simply measuring the mass of NaOH to determine the number of moles?
+      <input type="hidden" name="question" value="Why do we use KHP as a primary standard instead of simply measuring the
+mass of NaOH to determine the number of moles?">
+      <input type="hidden" name="correct" value="Because NaOH is hygroscopic (absorbs water from the air) and it mass is
+an unrelaibale method for determining the number of moles.">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="Because NaOH is a liquid at room temperature and pressure and it mass is
+an unrelaibale method for determining the number of moles.">
+    </td>
+    <td bgcolor = "ccccff">
+      Because NaOH is a liquid at room temperature and pressure and it mass is an unrelaibale method for determining the number of moles.
+    </td>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="Because NaOH is amorphous (has an indeterminate crystal structure) and
+it mass is an unrelaibale method for determining the number of moles.">
+    </td>
+    <td bgcolor = "ccccff">
+      Because NaOH is amorphous (has an indeterminate crystal structure) and it mass is an unrelaibale method for determining the number of moles.
+    </td>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="Because NaOH is hygroscopic (absorbs water from the air) and it mass is
+an unrelaibale method for determining the number of moles.">
+    </td>
+    <td bgcolor = "ccccff">
+      Because NaOH is hygroscopic (absorbs water from the air) and it mass is an unrelaibale method for determining the number of moles.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="MMKHP">
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#MMKHP">
+<table align="center" width="60%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      KHP has the formula C<sub>8</sub>H<sub>5</sub>KO<sub>4</sub>. What is the molar mass of KHP (to 5 significant figures)?
+      <input type="hidden" name="question" value="KHP has the formula C<sub>8</sub>H<sub>5</sub>KO<sub>4</sub>. What is
+the molar mass of KHP (to 5 significant figures)?">
+      <input type="hidden" name="correct" value="204.22 g/mol">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc" colspan="6">
+      <input name="answer"> g/mol
+      <input name="units" type="hidden" value="g/mol">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="MMNaOH">
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#MMNaOH">
+<table align="center" width="60%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      What is the molar mass of NaOH (to 5 significant figures)?
+      <input type="hidden" name="question" value="What is the molar mass of NaOH (to 5 significant figures)?">
+      <input type="hidden" name="correct" value="39.997 g/mol">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc" colspan="6">
+      <input name="answer"> g/mol
+      <input name="units" type="hidden" value="g/mol">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="massNaOH">
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#massNaOH">
+<table align="center" width="60%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      You wish to make an NaOH solution that is approximately 0.2 M. What mass of NaOH must you use per L of water to create this solution (to 2 significant digits)?
+      <input type="hidden" name="question" value="You wish to make an NaOH solution that is approximately 0.2 M. What mass
+of NaOH must you use per L of water to create this solution (to 2
+significant digits)?">
+      <input type="hidden" name="correct" value="8.0 g">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc" colspan="6">
+      <input name="answer"> g
+      <input name="units" type="hidden" value="g">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="toploader">
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#toploader">
+<table align="center" width="80%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      You measure the mass of NaOH(s) using a top loading balance rather than an analytical balance. Why?
+      <input type="hidden" name="question" value="You measure the mass of NaOH(s) using a top loading balance rather than
+an analytical balance. Why?">
+      <input type="hidden" name="correct" value="Because the mass of NaOH is only needed to be close to our target value.
+The actual concentration will not be calculated from the mass of NaOH used.">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="Because the mass of NaOH is only needed to be close to our target value.
+The actual concentration will not be calculated from the mass of NaOH used.">
+    </td>
+    <td bgcolor = "ccccff">
+      Because the mass of NaOH is only needed to be close to our target value. The actual concentration will not be calculated from the mass of NaOH used.
+    </td>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="Because the mass of NaOH must be known to two decimal places, but not four.">
+    </td>
+    <td bgcolor = "ccccff">
+      Because the mass of NaOH must be known to two decimal places, but not four.
+    </td>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="Because you are making a mistake! Use the analytical balance for all
+measurements!">
+    </td>
+    <td bgcolor = "ccccff">
+      Because you are making a mistake! Use the analytical balance for all measurements!
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="glassware">
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#glassware">
+<table align="center" width="80%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      Which piece of glassware shoudl be used to measure the volume of water into which the NaOH is dissolved?
+      <input type="hidden" name="question" value="Which piece of glassware shoudl be used to measure the volume of water
+into which the NaOH is dissolved?">
+      <input type="hidden" name="correct" value="A beaker is fine. The volume does not need to be perfect. It just needs
+to be close to the target value.">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="A volumetric flask is to be used in order to insure an exact solution
+volume.">
+    </td>
+    <td bgcolor = "ccccff">
+      A volumetric flask is to be used in order to insure an exact solution volume.
+    </td>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="A graduated cylinder is used to keep the volume measurement resonably
+precise.">
+    </td>
+    <td bgcolor = "ccccff">
+      A graduated cylinder is used to keep the volume measurement resonably precise.
+    </td>
+    <td bgcolor = "ccffcc">
+      <input type="radio" name="answer" value="A beaker is fine. The volume does not need to be perfect. It just needs
+to be close to the target value.">
+    </td>
+    <td bgcolor = "ccccff">
+      A beaker is fine. The volume does not need to be perfect. It just needs to be close to the target value.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="massKHP">
+When you do the standardization titration, you would liek to use a significant enough volume of the titrant 
+so that a small error in a volume rading is only a small fraction of the total value delevered. Let's suppose 
+we are using a 50 mL buret to deliver the NaOH solution. A significant volume might be considered to be about 20 mL. 
+(Less than 10 mL will give us only three significant figures in the volume, for example.) So let's assume we want to 
+use approximately 20 mL of NaOH solution (which we have made to be approximately 0.2 M.)
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#massKHP">
+<table align="center" width="60%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      What mass of KHP should be used so that we use close to 20 mL of NaOH?
+      <input type="hidden" name="question" value="What mass of KHP should be used so that we use close to 20 mL of NaOH?">
+      <input type="hidden" name="correct" value="0.82 g">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc" colspan="6">
+      <input name="answer"> g
+      <input name="units" type="hidden" value="g">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr><a name="calcVolNaOH">
+Suppose you are to perform the standardization. You have prepared the approximately 0.2 M NaOH solution. Now, you measure approximately 0.82 g of KHP. The actual mass
+you measure is <b>0.7902 g</b>.
+<form action="/~pfleming/cgi-bin/question.pl" method="POST">
+<input type="hidden" name="backurl" value="/~pfleming/chem/titrate.htm#calcVolNaOH">
+<table align="center" width="60%">
+  <tr>
+    <td colspan="6" bgcolor="ffcccc">
+      Approximately (to two significan figures) what volume of 0.2 M NaOH solution will you need for the titration of 0.7902 g of KHP?
+      <input type="hidden" name="question" value="Approximately (to two significan figures) what volume of 0.2 M NaOH solution will you need for the titration of 0.7902 g of KHP?">
+      <input type="hidden" name="correct" value="19 mL">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor = "ccffcc" colspan="6">
+      <input name="answer"> mL
+      <input name="units" type="hidden" value="mL">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <input type="submit" value="Am I right?">
+    </td>
+    <td colspan="3" align="center">
+      <input type="reset" value="Start over!">
+    </td>
+  </tr>
+</table>
+</form>
+
+</div>
+
+<form action="/~pfleming/cgi-bin/vtitrater2.0.pl" method="post">
+  <input type="submit" value="Let's begin a virtual titration!">
+</form><p>
+Return to the <a href="/~pfleming/chem/">Chemistry help</a> page?
+
+
+<div name="sig">
+	<footer>
+		<hr>
+		<p><b>This work is made available under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a> license.</b></p>
+		Patrick E. Fleming<br>
+		Department of Chemistry and Biochemistry<br>
+		California State University, East Bay<br>
+		<a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+	</footer>
+</div>
+
+</body>
+</html>
+

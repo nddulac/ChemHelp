@@ -1,0 +1,3 @@
+simple stoichiometry,9.9,3.2,3,How many g of PbCl<sub>2</sub> can be formed from {{var1}}  g of Pb(NO<sub>3</sub>)<sub2>2</sub> and excess NaCl?,0.84,2 NaCl + Pb(NO<sub>3</sub>)<sub>2</sub> &rightarrow; 2 NaNO<sub>3</sub> + PbCl<sub>2</sub>
+simple stoichiometry,9.9,3.2,3,How many g of AgCl can be formed from {{var1}}  g of AgNO<sub>3</sub> and excess KCl?,0.844,KCl + AgNO<sub>3</sub> &rightarrow; KNO<sub>3</sub> + AgCl
+simple stoichiometry,9.9,3.2,3,How many g of BaSO<sub>4</sub> can be formed from {{var1}}  g of Ba(NO<sub>3</sub>)<sub>2</sub> and excess H<sub>2</sub>SO<sub>4</sub>?,0.893,Ba(NO<sub>3</sub>)<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> &rightarrow; BaSO<sub>4</sub> + 2 HNO</sub>3</sub>

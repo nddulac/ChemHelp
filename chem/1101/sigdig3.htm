@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>significant digits (in multiplication and division)</title>
+</head>
+
+<body bgcolor="white">
+
+<h1>Significant Digits in Multiplication and Division Calculations</h1>
+
+The number of significant figits in a reported measurement is related 
+to the relative uncertainty of the number.  For example, the value 
+3.2950 g would be said to be know to within 1 part in 32950.<p>
+
+<table align="center" width="60%">
+  <tr>
+    <td bgcolor="99ffcc"><b>Value</b></td>  <td bgcolor="99ffcc"><b>Relative Uncertainty</b></td>  <td bgcolor="99ffcc"><b>Absolute Uncertainty</b></td>  
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">125 mL</td>  <td bgcolor="ffcc99">+/- 1 part in 125</td>  <td bgcolor="ffff99">+/- 1 mL</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">9.700 km</td>  <td bgcolor="ffcc99">+/- 1 part in 9700</td>    <td bgcolor="ffff99">+/- 0.001 km</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">6.02 x 10<sup>23</sup> atoms</td>  <td bgcolor="ffcc99">+/- 1 part in 602</td>    <td bgcolor="ffff99">+/- 1 x 10<sup>21</sup> atom</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">0.0024 g</td>  <td bgcolor="ffcc99">+/- 1 part in 24</td>    <td bgcolor="ffff99">+/- 0.0001 g</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">347.34 min</td>  <td bgcolor="ffcc99">+/- 1 part in 34734</td>    <td bgcolor="ffff99">+/- 0.01 min</td>
+  </tr>
+</table><p>
+
+In multiplication and division, we retain the largest relative 
+uncertainty.  But to make things easier, we make an approximation.
+In the table above, you notice that values with more significant 
+digits have a smaller relative uncertainty.  We relate the 
+relative uncertainy to the number of significant digits.
+For example, we say that all values with 3 significant digits are 
+known with a relative uncertainty of +/- 1 part in 1000.  All 
+values with 5 significant digits are known to within +/- 1 part in
+100000.  So we can rewrite the above table to reflect this:<p>
+
+<table align="center" width="80%">
+  <tr>
+    <td bgcolor="99ffcc"><b>Value</b></td>  <td bgcolor="99ffcc"><b>Approximate Relative Uncertainty</b></td>  <td bgcolor="99ffcc"><b>Absolute Uncertainty</b></td>  
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">125 mL</td>  <td bgcolor="ffcc99">+/- 1 part in 1000</td>  <td bgcolor="ffff99">+/- 1 mL</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">9.700 km</td>  <td bgcolor="ffcc99">+/- 1 part in 10000</td>  <td bgcolor="ffff99">+/- 0.001 km</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">6.02 x 10<sup>23</sup> atoms</td>  <td bgcolor="ffcc99">+/- 1 part in 1000</td>    <td bgcolor="ffff99">+/- 1 x 10<sup>21</sup> atom</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">0.0024 g</td>  <td bgcolor="ffcc99">+/- 1 part in 100</td>    <td bgcolor="ffff99">+/- 0.0001 g</td>
+  </tr>
+  <tr>
+    <td bgcolor="ff99cc">347.34 min</td>  <td bgcolor="ffcc99">+/- 1 part in 100000</td>    <td bgcolor="ffff99">+/- 0.01 min</td>
+  </tr>
+</table><p>
+
+In multiplication and division, we retain the largest relative 
+uncertainty.  The approximation we made makes this easy.  The value
+with the largest relative uncertainty is also the one with the least 
+number of significant digits.  Thus, we retain only as many significant 
+digits as the value with the fewest.<p>
+
+<h3>Examples</h3>
+
+<ol>
+<li><table width="85%">
+  <tr>
+    <td bgcolor="ffcccc"><b>Question</b>:  How many moles are contained 
+        in 0.025 L of a 0.1104 mol/L solution?
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="99ffcc">
+      <b>Solution</b>:
+      <pre>
+
+      0.025 L   0.1104 mol
+      ------- x ---------- = 0.0027600 mol   ==&gt  <b>0.0028 mol</b>
+                       L
+      </pre>
+    </td>
+  <tr>
+  </tr>
+    <td bgcolor="ffcc99"><b>Comments</b>: Since the value <b>0.025 
+        L</b> only contains two significant digits, we round the 
+        result to two significant digits.
+  </tr>
+</table><p><p>
+
+<li><table width="85%">
+  <tr>
+    <td bgcolor="ffcccc"><b>Question</b>:  How many Joules
+        are needed to raise the temperature of 15 g of H<sub>2</sub>O
+        24.2 K?
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="99ffcc">
+      <b>Solution</b>:
+      <pre>
+
+      15 g   24.2 K   4.184 J
+      ---- x ------ x ------- = 1518.7920 J   ==&gt  <b>1500 J</b>
+                          g K
+      </pre>
+    </td>
+  <tr>
+  </tr>
+    <td bgcolor="ffcc99"><b>Comments</b>: Since the value <b>15 
+        g</b> only contains two significant digits, we round the 
+        result to two significant digits.
+  </tr>
+</table><p><p>
+
+<li><table width="85%">
+  <tr>
+    <td bgcolor="ffcccc"><b>Question</b>:  What is the frequency of
+        the sodium "D" line (used in many street lamps) given it's
+        wavelength of 588.995 nm?
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="99ffcc">
+      <b>Solution</b>:
+      <pre>
+
+         1      10<sup>9</sup> nm   2.9979256 x 10<sup>8</sup> m
+   ---------- x ------ x ----------------- = 1.7657632 x 10<sup>20</sup> s<sup>-1</sup>   
+   588.995 nm       m                  s
+
+                        ==&gt  <b>1.76576 x 10<sup>20</sup> s<sup>-1</sup></b>
+      </pre>
+    </td>
+  <tr>
+  </tr>
+    <td bgcolor="ffcc99"><b>Comments</b>: Since the value of the 
+        wavelength <b>588.995 nm</b> is known to six significant digits,
+        the final result should be determined to six significant
+        digits.  Thus, the value of the speed of light must have 
+        more than six significant digits so it does not limit the
+        number of significant digits in the result.
+    <td>
+  </tr>
+</table>
+
+</ol>
+
+<h3>Sample Problems</h3>
+
+Answer the following to the correct number of significant digits:
+<a name="1">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table width="75%">
+  <tr>
+    <td colspan="5" bgcolor="ffccff">How many moles of water are contained in 27 g?<br> (H<sub>2</sub>O: 18.01 g/mol)
+      <input type="hidden" name="question" value="How many moles of water are contained in 27 g?<br> (H<sub>2</sub>O: 18.01 g/mol)">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input name="answer" size="10">moles</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="1.5">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig3.htm#1">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="2">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table width="75%">
+  <tr>
+    <td colspan="5" bgcolor="ffccff">A student adds 1270 mL of 6.0 mol/L solution of HCl solution to a reaction.  How many moles of HCl did he add?
+      <input type="hidden" name="question" value="A student adds 1270 mL of 6.0 mol/L solution of HCl solution to a reaction.  How many moles of HCl did he add?">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input name="answer" size="10">moles</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="7.6">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig3.htm#2">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="3">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table width="75%">
+  <tr>
+    <td colspan="5" bgcolor="ffccff">1.26 kg NaOH is dissolved in a beaker of water having a total volume of 10.00 L.  What is the concentration of the NaOH solution?<br> (NaOH: 39.99711 g/mol)
+      <input type="hidden" name="question" value="1.26 kg NaOH is dissolved in a beaker of water having a total volume of 10.00 L.  What is the concentration of the NaOH solution?<br> (NaOH: 39.99711 g/mol)">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccffcc"><input name="answer" size="10">mol/L</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="3.15">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig3.htm#3">
+<input type="submit" value="Am I right?">
+</form>
+
+
+
+<hr>
+Return to the <a href="/~pfleming/chem/1101/">Chem 1101 Page</a>?<p>
+
+</body>
+</html>

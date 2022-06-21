@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Isotopes</title>
+</head>
+
+<body bgcolor="white">
+
+<h1>Isotope Calculations</h1>
+    There are four variables in a typical isotope mass/abundance problem involving two isotopes of an element (A and B).<br>
+    <ol>
+      <li>Mass of Isotope A</li>
+      <li>Mass of Isotope B</li>
+      <li>Percent Abundance of Isotope A</li>
+      <li>Average Mass of Element</li>
+    </ol>
+    <p>You may choose a problem to determine any of these. You will be given three of the inputs, 
+    and be asked to solve for the missing piece of information.</p>
+    <h2>Which type of problem would you like to solve?</h2>
+    <form action="/~pfleming/cgi-bin/isotopes.pl" method="post">
+      <input type="radio" name="problem_type" value="A">Determine Mass of Isotope A<br>
+      <input type="radio" name="problem_type" value="B">Determine Mass of Isotope B<br>
+      <input type="radio" name="problem_type" value="C">Determine Percent Abundance of Isotope A<br>
+      <input type="radio" name="problem_type" value="D" checked>Determine Average Mass of Element<br>
+      <input type="hidden" name="control_1" value="Problem">
+      <input type="submit" value="Let's Go!">
+      <input type="reset" value="Clear Form">
+    </form>
+    <nav>
+        [<a href="index.htm">Chapter 2</a>]
+        [<a href="../index.htm">Chem 111</a>]
+        [<a href="../../index.htm">Chemistry Help</a>]
+    </nav>
+
+<div name="sig">
+<hr>
+Patrick E. Fleming<br>
+Department of Chemistry and Biochemistry<br>
+California State University, East Bay<br>
+<a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+</div>
+
+</body>
+</html>

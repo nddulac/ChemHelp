@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Dr. Fleming's Help Pages and Tutorials</title>
+</head>
+<body>
+	<header>
+		<img src="../images/1200px-CSUEB.png" alt="CSU East Bay seal">
+        <h1>Chemistry 111</h1>
+		<h3>Significant Figures</h3>
+	</header>
+    <div class="row">
+        <h2>Significant Figures in Calculations</h2>
+    </div>
+    <div class="row">
+        <div class="infoBlock">
+            <h3>Addition and Subtraction</h3>
+            <p>Every measurement has an uncertainty. When you give directions to your house, you might give distances with a certain amount of give and take. For example, you might tell a person to turn "five miles after the stoplight." Do you mean five miles plus or minus an inch? Or maybe five miles plus or minus a quarter mile?</p>
+            <p> In chemistry (like in most other fields!) we concern ourself with the size of that plus/minus interval. Just how big it is will determine how many significant digits there are in a result.</p>
+            <p>For example, when someone writes <b>4.5332 g</b> they are implying that the number of grams is known to +/- 0.0001 gram. If that mass were to be compared to another mass of say <b>43.23 g</b> (which as written is implied to be known to +/- 0.01 g) we would say that the uncertainty in the second mass is larger than in the first. So there would be no point in reporting the sum of the two masses to any smaller uncertainty than +/- 0.01 g. So claiming that the sum was <b>47.7632 g (+/- 0.01 g)</b> would be silly since the last two digits obviously have no meaning. The correct way of reporting the sum would be to round the result to the correct uncertainty of +/- 0.01 g.</p>
+            <table>
+                <tr><th>Rule: Addition and Subtraction</th></tr>
+                <tr>
+                    <td>When adding or subtracting values, always retain the largest <b>absolute uncertainty</b> in the result.</td>
+                </tr>
+            </table>
+            <table style="width: 70%;">
+                <tr><th>Example</th></tr>
+                <tr>
+                    <td><b>Question</b>:<br>
+                        A beaker is weighed and found to have a mass of 78.45 g. A sample of sodium chloride is added to the beaker and the beaker is weighed again using a different balance. The NaCl plus the beaker are found to have a mass of 79.6743 g. What is the mass of the sodium chloride?</td>
+                </tr>
+                <tr>
+                    <td><b>Solution</b>:<br>
+                            First, take the difference to get the mass of the sodium chloride:<br>
+
+                        <pre>
+
+                    79.7643 g         (mass of beaker and NaCl)
+                    - 78.45   g       - (mass of beaker         )
+                    ---------         -------------------------
+                    3.3143 g         (mass of            NaCl)
+                        </pre><br>
+                        Next, round to the correct number of significant digits:<br>
+                        <pre>
+                
+                    3.3143 g  ==>   <b>3.31 g</b>
+                        </pre><br>
+                </td>
+                </tr>
+                <tr>
+                    <td class="explain"><i>Note</i>: We can retain only those decimal places that the uncertainty allows.  In this case, +/- 0.01 g for the mass of the beaker meant we needed to round to the nearest hundredth of a gram.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <a name="AddSubProblems"/>
+        <div class="row">
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 1</th></tr>
+                        <tr>
+                            <td colspan="5">A student weighs a vial of KHP on an anylytical balance and finds the mass of the vile plus the KHP to be 6.4597 g. She then weighs the empty vile on a top loading balance and finds the mass of the vile to be 5.97 g. What is the mass of the KHP in the vile?
+                            <input type="hidden" name="question" value="A student weighs a vial of KHP on an anylytical balance and finds the mass of the vile plus the KHP to be 6.4597 g.  She then weighs the empty vile on a top loading balance and finds the mass of the vile to be 5.97 g.  What is the mass of the KHP in the vile?<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0.48970 g</td>
+                            <td>0.4897 g</td>
+                            <td>0.490 g</td>
+                            <td>0.49 g</td>
+                            <td>0.5  g</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="answer" value="0.48970 g"></td>
+                            <td><input type="radio" name="answer" value="0.4897 g"></td>
+                            <td><input type="radio" name="answer" value="0.490 g"></td>
+                            <td><input type="radio" name="answer" value="0.49 g"></td>
+                            <td><input type="radio" name="answer" value="0.5 g"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="0.49 g">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 2</th></tr>
+                        <tr>
+                            <td colspan="5">A sample of some compound is separated into two piles A and B. The mass of pile A is determined to be 59.78 g using a top loading balance. The mass of sample B is determined as 63.1046 g using the analytical balance. What is the total mass to the correct number of significant digits?
+                            <input type="hidden" name="question" value="A sample of some compound is separated into two piles A and B. The mass of pile A is determined to be 59.78 g using a top loading balance. The mass of sample B is determined as 63.1046 g using the analytical balance. What is the total mass to the correct number of significant digits?<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>122.8846 g</td>
+                            <td>122.885 g</td>
+                            <td>122.88 g</td>
+                            <td>122.9 g</td>
+                            <td>123  g</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="answer" value="122.8846 g"></td>
+                            <td><input type="radio" name="answer" value="122.885 g"></td>
+                            <td><input type="radio" name="answer" value="122.88 g"></td>
+                            <td><input type="radio" name="answer" value="122.9 g"></td>
+                            <td><input type="radio" name="answer" value="123 g"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="123.88 g">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 3</th></tr>
+                        <tr>
+                            <td colspan="5">A student mixes two beakers of liquid.  She determined the volume of one beaker using graduated cylinder to be 45.8 mL.  She used the density of the liquid and the mass to determine the volume of the second beaker to be 7.432 mL.  Assuming no change in volume due to mixing, what should she report for the total volume?
+                            <input type="hidden" name="question" value="A student mixes two beakers of liquid.  She determined the volume of one beaker using graduated cylinder to be 45.8 mL.  She used the density of the liquid and the mass to determine the volume of the second beaker to be 7.432 mL.  Assuming no change in volume due to mixing, what should she report for the total volume?<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="ccff99">53 mL</td>
+                            <td bgcolor="ccff99">53.2 mL</td>
+                            <td bgcolor="ccff99">53.23 mL</td>
+                            <td bgcolor="ccff99">53.230 mL</td>
+                            <td bgcolor="ccff99">53.2300 mL</td>
+                                            </tr>
+                        <tr>
+                            <td bgcolor="ccff99"><input type="radio" name="answer" value="53 mL"></td>
+                            <td bgcolor="ccff99"><input type="radio" name="answer" value="53.2 mL"></td>
+                            <td bgcolor="ccff99"><input type="radio" name="answer" value="53.23 mL"></td>
+                            <td bgcolor="ccff99"><input type="radio" name="answer" value="53.230 mL"></td>
+                            <td bgcolor="ccff99"><input type="radio" name="answer" value="53.2300 mL"></td>
+                                            </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="53.2 mL">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">   
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="infoBlock">
+            <h3>Counting Significant Digits</h3>
+            <p>Counting significant digits is as simple as 1-2-3. Just follow the rules!</p>
+            <table style="width: 80%;">
+                <tr><th colspan="2">Counting Significant Digits</th></tr>
+                <tr>
+                    <td><b>Rule 1</b></td>
+                    <td>All non-zero digits and "trapped zeros" (zeros which occur between significant digits) are significant digits.</td>
+                </tr>
+                <tr>
+                    <td><b>Rule 2</b></td>
+                    <td>ALeading zeros are never significant digits. All they do is hold the decimal place.</td>
+                </tr>
+                <tr>
+                    <td><b>Rule 3</b></td>
+                    <td>Trailing zeros to the right of the decimal are always significant digits. If they weren't no one would include them!</td>
+                </tr>
+                <tr>
+                    <td><b>Rule 4</b></td>
+                    <td>railing zeros to the left of the decimal place may or may not be significant. It is ambiguous in these cases. To help remove the ambiguity, people often use scientific notation. Then if the zeros are significant digits, it is clear because the occur as trailing zeros to the right of the decimal place.</td>
+                </tr>
+                <tr>
+                    <td><b>Rule 5</b></td>
+                    <td>Conversion factors which are based on definitions (such as 1000 mL per L or 3600 seconds per hour) have an infinite number of significant digits (because they are exact.) Exact numbers also occur in things you can count with zero uncertainty (such as 12 eggs or 37 railroad cars.)</td>
+                </tr>
+                <tr>
+                    <td><b>Rule 6</b></td>
+                    <td>Some physical constants are so well determined that the number of significant digits can be chosen. An example of this is pi which can be used to 3 significant digits (3.14) or 8 (3.1415927) when really high prescision is required.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <table>
+            <tr><th colspan="3">Some Examples</th></tr>
+            <tr>
+                <td>12.34 g</td>
+                <td>4 significant digits</td>
+                <td>Rule 1</td>
+            </tr>
+            <tr>
+                <td>0.000234 L</td>
+                <td>3 significant digits</td>
+                <td>Rules 1, 2</td>
+            </tr>
+            <tr>
+                <td>102.0 m</td>
+                <td>4 significant digits</td>
+                <td>Rules 1, 3</td>
+            </tr>
+            <tr>
+                <td>1200 km/sec</td>
+                <td>2, 3, or 4 significant digits</td>
+                <td>Rules 1, 4</td>
+            </tr>
+            <tr>
+                <td>6.02 x 10<sup>23</sup> atoms</td>
+                <td>3 significant digits</td>
+                <td>Rule 1</td>
+            </tr>
+            <tr>
+                <td>1.400 x 10<sup>-3</sup> mol</td>
+                <td>4 significant digits</td>
+                <td>Rules 1, 3</td>
+            </tr>
+            <tr>
+                <td>0.002320 coulomb</td>
+                <td>4 significant digits</td>
+                <td>Rules 1, 2, and 3</td>
+            </tr>
+            <tr>
+                <td>5280 ft/mile</td>
+                <td>infinite number of significant digits</td>
+                <td>Rule 5</td>
+            </tr>
+            <tr>
+                <td>c (speed of light in a vaccum)</td>
+                <td>generally, as many as you need</td>
+                <td>Rule 6</td>
+            </tr>
+        </table>
+    </div>
+    <div class="Container">
+        <a name="CountProbs"/>
+        <div class="row">
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 1</th></tr>
+                        <tr>
+                            <td colspan="5">How many significant digits are there in 26.450 mL?
+                            <input type="hidden" name="question" value="How many significant digits are there in 26.450 mL?<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>infinite</td>
+                            <td>4 or 5</td>
+                        </tr>
+                            <tr>
+                            <td><input type="radio" name="answer" value="3"></td>
+                            <td><input type="radio" name="answer" value="4"></td>
+                            <td><input type="radio" name="answer" value="5"></td>
+                            <td><input type="radio" name="answer" value="infinte"></td>
+                            <td><input type="radio" name="answer" value="4 or 5"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="5">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 2</th></tr>
+                        <tr>
+                            <td colspan="5">How many significant digits are there in 450 K?
+                            <input type="hidden" name="question" value="How many significant digits are there in 26.450 mL?<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>infinite</td>
+                            <td>2 or 3</td>
+                        </tr>
+                            <tr>
+                            <td><input type="radio" name="answer" value="2"></td>
+                            <td><input type="radio" name="answer" value="3"></td>
+                            <td><input type="radio" name="answer" value="4"></td>
+                            <td><input type="radio" name="answer" value="infinte"></td>
+                            <td><input type="radio" name="answer" value="2 or 3"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="2 or 3">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 3</th></tr>
+                        <tr>
+                            <td colspan="5">How many significant digits are there in 1000000 mg/kg?
+                            <input type="hidden" name="question" value="How many significant digits are there in 1000000 mg/kg<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>infinite</td>
+                            <td>1, 2, 3, 4, 5, 6, or 7</td>
+                        </tr>
+                            <tr>
+                            <td><input type="radio" name="answer" value="1"></td>
+                            <td><input type="radio" name="answer" value="3"></td>
+                            <td><input type="radio" name="answer" value="7"></td>
+                            <td><input type="radio" name="answer" value="infinte"></td>
+                            <td><input type="radio" name="answer" value="1, 2, 3, 4, 5, 6, or 7"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="infinte">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="question">
+                <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                    <table>
+                        <tr><th colspan="5">Problem 4</th></tr>
+                        <tr>
+                            <td colspan="5">How many significant digits are there in 0.0230 g?
+                            <input type="hidden" name="question" value="How many significant digits are there in 0.0230 g?<br>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>infinite</td>
+                            <td>2 or 3</td>
+                        </tr>
+                            <tr>
+                            <td><input type="radio" name="answer" value="2"></td>
+                            <td><input type="radio" name="answer" value="3"></td>
+                            <td><input type="radio" name="answer" value="4"></td>
+                            <td><input type="radio" name="answer" value="infinte"></td>
+                            <td><input type="radio" name="answer" value="2 or 3"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="hidden" name="correct" value="23">
+                                <input type="hidden" name="backurl" value="/~pfleming/chem/111/chap01/sigdig.htm">
+                                <input type="submit" value="Am I right?">
+                                <input type="reset" value="Clear form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="infoBlock">
+            <h3>Multiplication and Division</h3>
+            <p>The <b>relative uncertainty</b> in a reported value is given by 1 in the last decimal place reported (or the last significant digit) divided by the value of the number. The number of significant figits in a reported measurement is related to the relative uncertainty of the number. For example, the value 3.2950 g would be said to be know to within 1 part in 32950. Some more examples can be seen in the following table.</p>
+            <table>
+                <tr>
+                    <th>Value</th>
+                    <th>Relative Uncertainty</th>
+                    <th>Absolute Uncertainty</th>
+                </tr>
+                <tr>
+                    <td>125 mL</td>
+                    <td>1 part in 125</td>
+                    <td>&plusmn; 1 mL</td>
+                </tr>
+                <tr>
+                    <td>9.700 km</td>
+                    <td>1 part in 9700</td>
+                    <td>&plusmn; 0.001 km</td>
+                </tr>
+                <tr>
+                    <td>6.02 x 10<sup>23</sup> atoms</td>
+                    <td>1 part in 602</td>
+                    <td>&plusmn 0.01 x 10<sup>23 atoms</sup></td>
+                </tr>
+                <tr>
+                    <td>0.0024 g</td>
+                    <td>1 part in 24</td>
+                    <td>&plusmn; 0.0001 g</td>
+                </tr>
+                <tr>
+                    <td>347.34 min</td>
+                    <td>1 part in 34734</td>
+                    <td>&plusmn; 0.01 min</td>
+                </tr>
+            </table>
+            <p>It is convenient (and produces reasonable results) to approximate the relative uncertainty based on the number of significant digits in a value. In this way, the approximate relative uncertainty depends only on the number of significant digits in the value. Examples follow.</p>
+            <table>
+                <tr>
+                    <th>Value</th>
+                    <th>Approximate Relative Uncertainty</th>
+                    <th>Absolute Uncertainty</th>
+                </tr>
+                <tr>
+                    <td>125 mL</td>
+                    <td>1 part in 1000</td>
+                    <td>&plusmn; 1 mL</td>
+                </tr>
+                <tr>
+                    <td>9.700 km</td>
+                    <td>1 part in 10000</td>
+                    <td>&plusmn; 0.001 km</td>
+                </tr>
+                <tr>
+                    <td>6.02 x 10<sup>23</sup> atoms</td>
+                    <td>1 part in 1000</td>
+                    <td>&plusmn 0.01 x 10<sup>23 atoms</sup></td>
+                </tr>
+                <tr>
+                    <td>0.0024 g</td>
+                    <td>1 part in 100</td>
+                    <td>&plusmn; 0.0001 g</td>
+                </tr>
+                <tr>
+                    <td>347.34 min</td>
+                    <td>1 part in 100000</td>
+                    <td>&plusmn; 0.01 min</td>
+                </tr>
+            </table>
+            <p>This is important because <b>in multiplication and division, we rertain the largest relative uncertainty</b>. That means that the number of significant digits reported in the answer will mtch that of the component value with the fewest significant digits. <i>Important note</i>: This rule applies to multiplication and division only - not to addition and subtrction!</p>
+        </div>
+        <div class="row">
+            <table>
+                <tr><th>Example</th></tr>
+                <tr>
+                    <td><b>Question</b>: How many moles are contained in 0.025 L of a 0.1104 mol/L solution?</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Solution</b>:
+                        <pre>
+            0.025 L   0.1104 mol
+            ------- x ---------- = 0.0027600 mol   ==&gt;  <b>0.0028 mol</b>
+                            L
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="explain">Since the value <b>0.025 L</b> only contains two significant digits, we round the result to two significant digits.</td>
+                </tr>
+            </table>
+            <table>
+                <tr><th>Example</th></tr>
+                <tr>
+                    <td><b>Question</b>: How many Joules are needed to raise the temperature of 15 g of H<sub>2</sub>O 24.2 K?</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Solution</b>:
+                        <pre>
+            15 g   24.2 K   4.184 J
+            ---- x ------ x ------- = 1518.7920 J   ==&gt;  <b>1500 J</b>
+                                g K
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="explain">Since the value <b>15 g</b> only contains two significant digits, we round the result to two significant digits.</td>
+                </tr>
+            </table>
+            <table>
+                <tr><th>Example</th></tr>
+                <tr>
+                    <td><b>Question</b>:  What is the frequency of the sodium "D" line (used in many street lamps) given it's wavelength of 588.995 nm?</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Solution</b>:
+                        <pre>
+                1         10<sup>9</sup> nm   2.9979256 x 10<sup>8</sup> m
+            ---------- x ------ x ----------------- = 1.7657632 x 10<sup>20</sup> s<sup>-1</sup>   
+            588.995 nm     m              s
+
+            
+                        ==&gt;  <b>1.76576 x 10<sup>20</sup> s<sup>-1</sup></b>
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="explain"> Since the value of the wavelength <b>588.995 nm</b> is known to six significant digits, the final result should be determined to six significant digits.  Thus, the value of the speed of light must have more than six significant digits so it does not limit the number of significant digits in the result.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <a name="multdiv"/>
+            <p>Answer the following to the correct number of significnt figures.</p>
+            <div class="row">
+                <div class="question">
+                    <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                        <table>
+                            <tr><th>Problem 1</th></tr>
+                            <tr>
+                                <td>How many moles of water are contained in 27 g?<br>(H<sub>2</sub>O: 18.01 g/mol)
+                                <input type="hidden" name="question" value="How many moles of water are contained in 27 g?<br> (H<sub>2</sub>O: 18.01 g/mol)"></td>
+                            </tr>
+                            <tr>
+                                <td><input name="answer" size="10">moles</td>
+                            </tr>
+                            <tr>
+                                <td><input type="hidden" name="correct" value="1.5">
+                                    <input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigfig.htm#multdiv">
+                                    <input type="submit" value="Am I right?">
+                                    <input type="reset" value="Clear form"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="question">
+                    <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                        <table>
+                            <tr><th>Problem 2</th></tr>
+                            <tr>
+                                <td>A student adds 1270 mL of 6.0 mol/L solution of HCl solution to a reaction.  How many moles of HCl did they add?
+                                <input type="hidden" name="question" value="A student adds 1270 mL of 6.0 mol/L solution of HCl solution to a reaction.  How many moles of HCl did they add?"></td>
+                            </tr>
+                            <tr>
+                                <td><input name="answer" size="10">moles</td>
+                            </tr>
+                            <tr>
+                                <td><input type="hidden" name="correct" value="7.6">
+                                    <input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigfig.htm#multdiv">
+                                    <input type="submit" value="Am I right?">
+                                    <input type="reset" value="Clear form"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="question">
+                    <form method="post" action="/~pfleming/cgi-bin/question.pl">
+                        <table>
+                            <tr><th>Problem 3</th></tr>
+                            <tr>
+                                <td>1.26 kg NaOH is dissolved in a beaker of water having a total volume of 10.00 L.  What is the concentration of the NaOH solution?<br> (NaOH: 39.99711 g/mol)
+                                <input type="hidden" name="question" value="1.26 kg NaOH is dissolved in a beaker of water having a total volume of 10.00 L.  What is the concentration of the NaOH solution?<br> (NaOH: 39.99711 g/mol)"></td>
+                            </tr>
+                            <tr>
+                                <td><input name="answer" size="10">mol/L</td>
+                            </tr>
+                            <tr>
+                                <td><input type="hidden" name="correct" value="3.15">
+                                    <input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigfig.htm#multdiv">
+                                    <input type="submit" value="Am I right?">
+                                    <input type="reset" value="Clear form"></td>
+                            </tr>
+                        </table>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        [<a href="index.htm">Chapter 1</a>]
+        [<a href="../index.htm">Chem 111</a>]
+        [<a href="../../index.htm">Chemistry Help</a>]
+    </nav>
+    <footer>
+        <hr>
+        <p><b>This work is made available under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a> license.</b></p>
+        Patrick E. Fleming<br>
+        Department of Chemistry and Biochemistry<br>
+        California State University, East Bay<br>
+        <a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+    </footer>
+</body>
+</html>

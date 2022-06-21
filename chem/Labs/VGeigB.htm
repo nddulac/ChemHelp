@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Virtual Nuclear Laboratory - Part B</title>
+	</head>
+	<body>
+		<h1>Virtual Nuclear Laboratory - Part B</h1>
+		<div id="pic">
+			<img src="VGeig.PNG" alt="Virtual Geiger Counter">
+		</div>
+		<div id="instructions">
+			<u>Instructions</u>:
+			<ol>
+				<li>Select a distance between the radio nuclide sample and the Geiger counter from the pull-down list.</li>
+				<li>Push the "Measure the Sample" button to activate the virtual Geiger counter and determine the detected activity.</li>
+			</ol>
+		</div>
+		<div id="VirtLaboratory">
+			<form action="/~pfleming/cgi-bin/geigerB.pl" method="post">
+				<p>The sample to be used is gallium-67.</p>
+				<p>Select a distance from the sample to the detector from the list:
+				<select name="distance">
+					<option value="0">Select a distance</option>
+					<option value="1.0">1.0 cm</option>
+					<option value="2.0">2.0 cm</option>
+					<option value="3.0">3.0 cm</option>
+					<option value="4.0">4.0 cm</option>
+					<option value="5.0">5.0 cm</option>
+					<option value="6.0">6.0 cm</option>
+					<option value="7.0">7.0 cm</option>
+					<option value="8.0">8.0 cm</option>
+					<option value="9.0">9.0 cm</option>
+					<option value="10.0">10.0 cm</option>
+				</select></p>
+				<input type="hidden" name="burl" value="/~pfleming/chem/VGeigB.htm">
+				<input type="submit" value="Measure the Sample">
+			</form>
+		</div>
+		<div id="credit">
+			<hr>
+			This simulator is based on the excelent <a href="https://www.uccs.edu/vgcl/nuclear-chemistry/experiment-2-types-of-radiation">
+			Virtual Nuclear Laboratory</a> located at the University of Colorado, Colorado Springs.
+		</div>
+	</body>
+	<footer>
+		<hr>
+		Patrick E. Fleming<br>
+		Department of Chemistry and Biochemistry<br>
+		California State University, East Bay<br>
+		<a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+	</footer>
+</html>

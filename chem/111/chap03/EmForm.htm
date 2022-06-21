@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Dr. Fleming's Help Pages and Tutorials</title>
+</head>
+<body>
+	<header>
+		<img src="../images/1200px-CSUEB.png" alt="CSU East Bay seal">
+        <h1>Chemistry 111</h1>
+		<h3>Empirical Formula</h3>
+	</header>
+    <div class="row">
+        <h2>Emperical Formula</h2>
+    </div>
+    <div class="row">
+        <div class="infoBlock" style="padding: 10px;">
+            <p>Determining an empirical formula from percent by mass data isn't too difficult.  Generally, one begins by
+            assuming 100 g of sample. Once the masses are determined, the number of moles is calculated for each element. 
+            The smallest whole-number ratio of moles will indicate the emirical formula.</p>
+        </div>
+        <table>
+            <tr>
+                <th>An Example</th>
+            </tr>
+            <tr>
+                <td>
+                    <p><b>Problem</b>: A compound containing only Al (26.98 g/mol) and Br (79.90 g/mol) is found to be 10.12% by mass Al. What is the empirical formula of the compound?</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><b>Solution</b>: Assuming 100 g of sample, the masses present ofr the individual elements is</p>
+                    <table>
+                        <tt>
+                            <th>Element</th>
+                            <th>Mass</th>
+                        </tt>
+                        <tr>
+                            <td style="background: white;">Al</td>
+                            <td style="background: white;">10.12 g</td>
+                        </tr>
+                        <tr>
+                            <td style="background: white;">Br</td>
+                            <td style="background: white;">89.88 g</td>
+                        </tr>
+                    </table>
+                <p>Now we can determine the number of moles of each element present in this theoretical sample of 100 g.</p>
+                <p><pre>
+          mol Al
+10.12 g * ------- = 0.3751 mol Al
+          26.98 g
+                </pre></p>
+                <p><pre>
+           mol Br
+89.88 g * ------- = 1.125 mol Br
+          79.90 g
+                </pre></p>
+                <p>Now, we find the mole ratio by dividing by the smaller number of moles.</p>
+                <p><pre>
+1.125 mol Br
+------------- = 2.9992 Br/Al
+0.3751 mol Al
+                </pre></p>
+                <p>Clearly, this must be an integer ratio. And so, we can assum the exact ratio is 3 Br per Al Thus, the empirical formula is AlBr<sub>3</sub></p>
+            </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Another Example</th>
+            </tr>
+            <tr>
+                <td>
+                    <p><b>Problem</b>: A compound containing only Fe (55.84 g/mol) and S (32.06 g/mol) is found to be 53.73% by mass Fe. What is the empirical formula of the compound?</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><b>Solution</b>: Assuming 100 g of sample, the masses present ofr the individual elements is</p>
+                    <table>
+                        <tt>
+                            <th>Element</th>
+                            <th>Mass</th>
+                        </tt>
+                        <tr>
+                            <td style="background: white;">Fe</td>
+                            <td style="background: white;">53.73 g</td>
+                        </tr>
+                        <tr>
+                            <td style="background: white;">S</td>
+                            <td style="background: white;">46.27 g</td>
+                        </tr>
+                    </table>
+                <p>Now we can determine the number of moles of each element present in this theoretical sample of 100 g.</p>
+                <p><pre>
+          mol Fe
+53.73 g * ------- = 0.9622 mol Fe
+          55.84 g
+                </pre></p>
+                <p><pre>
+           mol S
+46.27 g * ------- = 1.443 mol S
+          32.06 g
+                </pre></p>
+                <p>Now, we find the mole ratio by dividing by the smaller number of moles.</p>
+                <p><pre>
+1.443 mol S
+------------- = 1.4997 S/Fe
+0.9622 mol Fe
+                </pre></p>
+                <p>Clearly, this must be an integer ratio. And so, we can assum the exact ratio is 1.5 S per Fe, or 3 S per 2 Fe. Thus, the empirical formula is Fe<sub>2</sub>S<sub>3</sub></p>
+            </td>
+            </tr>
+        </table>
+    </div class="row">
+        <h3>Now it's your turn!</h3>
+        <form action="/~pfleming/cgi-bin/emForm.pl" method="post">
+        <input type="hidden" name="control_1" value="data">
+        <input type="submit" value="Try your own problem!">
+        </form>
+    </div>
+    <nav>
+        [<a href="index.htm">Chapter 1</a>]
+        [<a href="../index.htm">Chem 111</a>]
+        [<a href="../../index.htm">Chemistry Help</a>]
+    </nav>
+    <footer>
+        <hr>
+        <p><b>This work is made available under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a> license.</b></p>
+        Patrick E. Fleming<br>
+        Department of Chemistry and Biochemistry<br>
+        California State University, East Bay<br>
+        <a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+    </footer>
+</body>
+</html>

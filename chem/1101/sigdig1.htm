@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>significant digits (addition and subtracton)</title>
+</head>
+
+<body bgcolor="white">
+
+<h1>Significant Digits in Calculations</h1>
+
+Every measurement has an uncertainty.  When you give directions to your 
+house, you might give distances with a certain amount of give and take.
+For example, you might tell a person to turn "five miles after the 
+stoplight."  Do you mean five miles plus or minus an inch?  Or maybe 
+five miles plus or minus a quarter mile?<p>
+
+In chemistry (like in most other fields!) we concern ourself with the
+size of that plus/minus interval.  Just how big it is will determine 
+how many significant digits there are in a result.<p>
+
+For example, when someone writes <b>4.5332 g</b> they are implying that 
+the number of grams is known to +/- 0.0001 gram.  If that mass were to 
+be compared to another mass of say <b>43.23 g</b> (which as written is 
+implied to be known to +/- 0.01 g) we would say that the uncertainty in
+the second mass is larger than in the first.  So there would be no 
+point in reporting the sum of the two masses to any smaller uncertainty
+than +/- 0.01 g.  So claiming that the sum was <b>47.7632 g 
+(+/- 0.01 g)</b> would be silly since the last two digits obviously 
+have no meaning.  The correct way of reporting the sum would be to 
+round the result to the correct uncertainty of +/- 0.01 g.<p>
+
+<table width="50%" align="center">
+  <tr>
+    <td bgcolor="ffccff"><b>Rule</b>:</td>
+    <td bgcolor="99ccff">When adding or subtracting values, always 
+        retain the largest uncertainty in the result.</td>
+  </tr>
+</table><p><p>
+
+Here is an example.<p>
+
+<table width="65%" align="center">
+  <tr>
+    <td><b>Example</b>:</td>
+    <td bgcolor="ffcc99">A beaker is weighed and found to have a mass
+        of 78.45 g.  A sample of sodium chloride is added to the beaker
+        and the beaker is weighed again using a different balance.  The 
+        NaCl plus the beaker are found to have a mass of 79.6743 g.
+        What is the mass of the sodium chloride?</td>
+  </tr>
+  <tr>
+    <td><b>Solution</b>:</td>
+    <td bgcolor="ccff99">
+      First, take the difference to get the mass of the sodium chloride:<p>
+
+      <pre>
+    79.7643 g         (mass of beaker and NaCl)
+  - 78.45   g       - (mass of beaker         )
+    ---------         -------------------------
+     3.3143 g         (mass of            NaCl)
+      </pre><p>
+      Next, round to the correct number of significant digits:<p>
+      <pre>
+
+     3.3143 g  ==>   <b>3.31 g</b>
+      </pre><p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="ff9999"><i>Note</i>: We can retain only those decimal 
+        places that the uncertainty allows.  In this case, +/- 0.01 g 
+        for the mass of the beaker meant we needed to round to the 
+        nearest hundredth of a gram.
+    </td>
+  </tr>
+</table>
+<hr>
+
+<h3>Sample Problems</h3>
+
+<a name="1">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ff99ff">A student weighs a vial of KHP on
+        an anylytical balance and finds the mass of the vile plus the
+        KHP to be 6.4597 g.  She then weighs the empty vile on a top
+        loading balance and finds the mass of the vile to be 5.97 g.  
+        What is the mass of the KHP in the vile?<br>
+      <input type="hidden" name="question" value="A student weighs a vial of KHP on
+        an anylytical balance and finds the mass of the vile plus the
+        KHP to be 6.4597 g.  She then weighs the empty vile on a top
+        loading balance and finds the mass of the vile to be 5.97 g.  
+        What is the mass of the KHP in the vile?<br>">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="0.48970 g">0.48970 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="0.4897 g">0.4897 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="0.490 g">0.490 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="0.49 g">0.49 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="0.5 g">0.5 g</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="0.49 g">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig1.htm#1">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="2">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ff99ff">A sample of some compound is 
+        separated into two piles A and B.  The mass of pile A is 
+        determined to be 59.78 g using a top loading balance.  The
+        mass of sample B is determined as 63.1046 g using the 
+        analytical balance.  What is the total mass to the 
+        correct number of significant digits?<br>
+      <input type="hidden" name="question" value="A sample of some compound is 
+        separated into two piles A and B.  The mass of pile A is 
+        determined to be 59.78 g using a top loading balance.  The
+        mass of sample B is determined as 63.1046 g using the 
+        analytical balance.  What is the total mass to the 
+        correct number of significant digits?<br>">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="122.8846 g">122.8846 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="122.885 g">122.885 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="122.88 g">122.88 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="122.9 g">122.9 g</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="123 g">123 g</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="122.88 g">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig1.htm#2">
+<input type="submit" value="Am I right?">
+</form>
+
+<a name="3">
+<form method="post" action="/~pfleming/cgi-bin/question.pl">
+<table>
+  <tr>
+    <td colspan="5" bgcolor="ff99ff">A student mixes two beakers of 
+        liquid.  She determined the volume of one beaker using graduated 
+        cylinder to be 45.8 mL.  She used the density of the liquid and 
+        the mass to determine the volume of the second beaker to be 
+        7.432 mL.  Assuming no change in volume due to mixing, what 
+        should she report for the total volume?<br>
+      <input type="hidden" name="question" value="A student mixes two beakers of 
+        liquid.  She determined the volume of one beaker using graduated 
+        cylinder to be 45.8 mL.  She used the density of the liquid and 
+        the mass to determine the volume of the second beaker to be 
+        7.432 mL.  Assuming no change in volume due to mixing, what 
+        should she report for the total volume?<br>">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="53 mL">53 mL</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="53.2 mL">53.2 mL</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="53.23 mL">53.23 mL</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="53.230 mL">53.230 mL</td>
+    <td bgcolor="ccff99"><input type="radio" name="answer" value="53.2300 mL">53.2300 mL</td>
+  </tr>
+</table>
+<input type="hidden" name="correct" value="53.2 mL">
+<input type="hidden" name="backurl" value="/~pfleming/chem/1101/sigdig1.htm#3">
+<input type="submit" value="Am I right?">
+</form>
+
+
+<hr>
+Return to the <a href="/~pfleming/chem/1101/">Chem 1101 Page</a>?<p>
+
+<div name="sig">
+<hr>
+Patrick E. Fleming<br>
+Department of Chemistry and Biochemistry<br>
+California State University, East Bay<br>
+<a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+</div>
+
+
+</body>
+</html>

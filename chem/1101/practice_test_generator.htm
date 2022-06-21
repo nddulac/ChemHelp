@@ -1,0 +1,29 @@
+<html>
+<head><title>Practice Test Generator</title></head>
+<body>
+
+<h1>Practice Test Generator</h1>
+
+Welcome to the <b>Practice Test Generator</b>. Here you can generate a practice test using the following test banks:<p>
+
+<form action="/~pfleming/cgi-bin/test.pl" method="post">
+<ul>
+  <input type="radio" name="TestBank" value="isotope.csv" checked="checked">Isotopes<br>
+  <input type="radio" name="TestBank" value="ions.csv">Ions<br>
+  <ul>
+    <input type="radio" name="TestBank" value="ions-formname.csv">Ions - name from formula<br>
+    <input type="radio" name="TestBank" value="ions-nameform.csv">Ions - formula to name<br>
+  </ul>
+  I would like <input name="nquestions" value="10"> questions.<p>
+</ul>
+<input type="submit" value="Go!">  
+</form><p>
+<i>Note</i>: Use no fewer than 5 questions and no more than 25.<p>
+
+Would you like to return to the <a href="/~pfleming/chem/1102/">Chem 1102</a> page?
+<hr>
+Patrick E. Fleming<br>
+Department of Chemistry and Biochemistry<br>
+California State University, East Bay<br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Virtual Nuclear Laboratory - Part A</title>
+	</head>
+	<body>
+		<h1>Virtual Nuclear Laboratory - Part A</h1>
+		<div id="pic">
+			<img src="VGeig.PNG" alt="Virtual Geiger Counter">
+		</div>
+		<div id="instructions">
+			<u>Instructions</u>:
+			<ol>
+				<li>Select a radio nuclide from the pull-down list.</li>
+				<li>Select a shielding material from the pull-down list.</li>
+				<li>Push the "Measure the Sample" button to activate the virtual Geiger counter and determine the detected activity.</li>
+			</ol>
+		</div>
+		<div id="VirtLaboratory">
+			<form action="/~pfleming/cgi-bin/geiger.pl" method="post">
+				<p>Select a radio nuclide from the list:
+				<select name="nuclide">
+					<option value="6">Select a nuclide</option>
+					<option value="0">iron-59</option>
+					<option value="1">gallium-67</option>
+					<option value="2">iodine-125</option>
+					<option value="3">phosphorus-32</option>
+					<option value="4">radon-222</option>
+					<option value="5">strontium-85</option>
+				</select></p>
+				<p>Select a shielding medium from the list:
+				<select name="shield">
+					<option value="0">Select a shield medium</option>
+					<option value="0">none</option>
+					<option value="1">paper</option>
+					<option value="2">1 mm cardboard</option>
+					<option value="3">1 mm aluminum</option>
+					<option value="4">1 mm lead</option>
+				</select></p>
+				<input type="hidden" name="burl" value="/~pfleming/chem/VGeigA.htm">
+				<input type="submit" value="Measure the Sample">
+			</form>
+		</div>
+		<div id="credit">
+			<hr>
+			This simulator is based on the excelent <a href="https://www.uccs.edu/vgcl/nuclear-chemistry/experiment-2-types-of-radiation">
+			Virtual Nuclear Laboratory</a> located at the University of Colorado, Colorado Springs.
+		</div>
+	</body>
+	<footer>
+		<hr>
+		Patrick E. Fleming<br>
+		Department of Chemistry and Biochemistry<br>
+		California State University, East Bay<br>
+		<a href="mailto:patrick.fleming@csueastbay.edu">patrick.fleming@csueastbay.edu</a>
+	</footer>
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+}
+
+header {
+    background: red;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: 40px;
+}
+
+header img {
+    width: 150px;
+    margin: 0;
+    margin-top: -30px;
+    float: right;
+}
+
+p {
+    padding: 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: black solid 2px;
+    margin: 10px;
+    padding: 20px;
+    padding-right: 30px;
+    width: 350px;
+    box-shadow: 10px 10px 10px #666;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoBlock {
+    margin: 5px;
+    border: 5px solid black;
+}
+
+.infoBlock-2x {
+    margin: 5px;
+    border: 5px solid black;
+    width: 40%;
+    min-width: 470px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.card ul {
+    padding-top: 5px;
+    color: black;
+}
+
+.card-title {
+    margin: 0;
+    padding: 5px;
+    background: black;            
+    color: white;
+    font-family: 'Arial';
+    font-size: 1.2em;
+}
+
+.card-icon {
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+}
+
+.card:hover {
+    margin: 8px;
+    border: black solid 4px;
+    background: #ddd;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.explain {
+    font-family: arial;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background: lightgrey;
+}
+
+/**************************************************
+    Table formatting below
+**************************************************/
+
+table {
+    margin: 10px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: red;
+    color: white;
+    font-family: arial;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+td {
+    background-color: pink;
+    padding: 2px;
+}
+
+.question {
+    width: 350px;
+    
+}
+
+/**************************************************
+    Media Querries below
+**************************************************/
+
+@media screen and (max-width: 1200px) {
+    header {
+        font-size: 20px;
+    }
+    
+    header img {
+        display: none;
+    }
+
+    .infoBlock-2x {
+        flex-direction: column;
+    }
+}
+
